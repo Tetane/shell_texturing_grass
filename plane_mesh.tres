@@ -1,0 +1,14 @@
+[gd_resource type="PlaneMesh" load_steps=4 format=3 uid="uid://bwgyhlm0c5fqe"]
+
+[ext_resource type="Shader" path="res://grass.gdshader" id="1_ftkv0"]
+[ext_resource type="Texture2D" uid="uid://7exvq3igq6oq" path="res://new_noise_texture_2d.tres" id="2_ac6g7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_77def"]
+render_priority = 0
+shader = ExtResource("1_ftkv0")
+shader_parameter/instance_count = null
+shader_parameter/col = Color(0, 0.882353, 0.384314, 1)
+shader_parameter/noiseTex = ExtResource("2_ac6g7")
+
+[resource]
+material = SubResource("ShaderMaterial_77def")
